@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8F61ED111D81494100A88D62 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F61ED101D81494100A88D62 /* main.cpp */; };
+		8FE1FD301D8593DB009AD0D3 /* str_echo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1FD2F1D8593DB009AD0D3 /* str_echo.cpp */; };
+		8FE1FD311D85949A009AD0D3 /* commsock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1FD241D85931E009AD0D3 /* commsock.cpp */; };
+		8FE1FD321D85949C009AD0D3 /* error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1FD261D85931E009AD0D3 /* error.cpp */; };
+		8FE1FD331D85949F009AD0D3 /* readline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1FD271D85931E009AD0D3 /* readline.cpp */; };
+		8FE1FD341D8594A2009AD0D3 /* wraplib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1FD291D85931E009AD0D3 /* wraplib.cpp */; };
+		8FE1FD351D8594A5009AD0D3 /* wrapstdio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1FD2A1D85931E009AD0D3 /* wrapstdio.cpp */; };
+		8FE1FD361D8594A7009AD0D3 /* writen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1FD2B1D85931E009AD0D3 /* writen.cpp */; };
+		8FE1FD3D1D85B01F009AD0D3 /* SocketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1FD3B1D85B01F009AD0D3 /* SocketManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,16 @@
 /* Begin PBXFileReference section */
 		8F61ED0D1D81494100A88D62 /* SevenServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SevenServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F61ED101D81494100A88D62 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8FE1FD231D85931E009AD0D3 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		8FE1FD241D85931E009AD0D3 /* commsock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = commsock.cpp; sourceTree = "<group>"; };
+		8FE1FD261D85931E009AD0D3 /* error.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = error.cpp; sourceTree = "<group>"; };
+		8FE1FD271D85931E009AD0D3 /* readline.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = readline.cpp; sourceTree = "<group>"; };
+		8FE1FD291D85931E009AD0D3 /* wraplib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wraplib.cpp; sourceTree = "<group>"; };
+		8FE1FD2A1D85931E009AD0D3 /* wrapstdio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wrapstdio.cpp; sourceTree = "<group>"; };
+		8FE1FD2B1D85931E009AD0D3 /* writen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = writen.cpp; sourceTree = "<group>"; };
+		8FE1FD2F1D8593DB009AD0D3 /* str_echo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = str_echo.cpp; sourceTree = "<group>"; };
+		8FE1FD3B1D85B01F009AD0D3 /* SocketManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketManager.cpp; sourceTree = "<group>"; };
+		8FE1FD3C1D85B01F009AD0D3 /* SocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,25 +75,35 @@
 		8F61ED0F1D81494100A88D62 /* SevenServer */ = {
 			isa = PBXGroup;
 			children = (
-				8F61F05C1D814E6D00A88D62 /* lib */,
-				8F61F05D1D814E6D00A88D62 /* tcpser */,
+				8FE1FD221D85931E009AD0D3 /* lib */,
+				8FE1FD2C1D85931E009AD0D3 /* net */,
 				8F61ED101D81494100A88D62 /* main.cpp */,
 			);
 			path = SevenServer;
 			sourceTree = "<group>";
 		};
-		8F61F05C1D814E6D00A88D62 /* lib */ = {
+		8FE1FD221D85931E009AD0D3 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				8FE1FD2F1D8593DB009AD0D3 /* str_echo.cpp */,
+				8FE1FD231D85931E009AD0D3 /* common.h */,
+				8FE1FD241D85931E009AD0D3 /* commsock.cpp */,
+				8FE1FD261D85931E009AD0D3 /* error.cpp */,
+				8FE1FD271D85931E009AD0D3 /* readline.cpp */,
+				8FE1FD291D85931E009AD0D3 /* wraplib.cpp */,
+				8FE1FD2A1D85931E009AD0D3 /* wrapstdio.cpp */,
+				8FE1FD2B1D85931E009AD0D3 /* writen.cpp */,
 			);
 			path = lib;
 			sourceTree = "<group>";
 		};
-		8F61F05D1D814E6D00A88D62 /* tcpser */ = {
+		8FE1FD2C1D85931E009AD0D3 /* net */ = {
 			isa = PBXGroup;
 			children = (
+				8FE1FD3B1D85B01F009AD0D3 /* SocketManager.cpp */,
+				8FE1FD3C1D85B01F009AD0D3 /* SocketManager.h */,
 			);
-			path = tcpser;
+			path = net;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +162,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE1FD321D85949C009AD0D3 /* error.cpp in Sources */,
+				8FE1FD301D8593DB009AD0D3 /* str_echo.cpp in Sources */,
+				8FE1FD331D85949F009AD0D3 /* readline.cpp in Sources */,
 				8F61ED111D81494100A88D62 /* main.cpp in Sources */,
+				8FE1FD361D8594A7009AD0D3 /* writen.cpp in Sources */,
+				8FE1FD3D1D85B01F009AD0D3 /* SocketManager.cpp in Sources */,
+				8FE1FD351D8594A5009AD0D3 /* wrapstdio.cpp in Sources */,
+				8FE1FD311D85949A009AD0D3 /* commsock.cpp in Sources */,
+				8FE1FD341D8594A2009AD0D3 /* wraplib.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +289,7 @@
 				8F61ED161D81494100A88D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
